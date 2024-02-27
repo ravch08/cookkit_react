@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+  @apply py-24;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.nav-link {
+  @apply px-4 py-8 text-sm font-medium uppercase text-black transition-colors duration-300 ease-in-out hover:text-green-primary;
+}
+
+.nav-link.active {
+  @apply text-green-400;
+}
+
+.btn-recipe {
+  @apply mt-6 inline-block rounded-md bg-amber-500 px-6 py-2 text-center text-sm text-white;
+}
